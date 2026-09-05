@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class RegisterPatientRequestDto {
 	private String patientName;
-    private String gender;
+    private Gender gender;
     private String patientEmail;
     private String patientPhoneNumber;
     private LocalDate dateOfBirth;
