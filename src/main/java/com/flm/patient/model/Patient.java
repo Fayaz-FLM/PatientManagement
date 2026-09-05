@@ -41,15 +41,15 @@ public class Patient {
 	
 	private LocalDate dateOfBirth;
 
-	public Patient(String name, String gender, String email, long phnnum, PatientAddress patientAddress,
-			LocalDate dOB) {
+	public Patient(String name, String gender, String email, long phoneNumber, PatientAddress patientAddress,
+			LocalDate dateOfBirth) {
 		super();
 		this.name = name;
 		this.gender = gender;
 		this.email = email;
-		this.phnnum = phnnum;
+		this.phoneNumber = phoneNumber;
 		this.patientAddress = patientAddress;
-		DOB = dOB;
+		this.dateOfBirth = this.dateOfBirth;
 	}
 	
 	
