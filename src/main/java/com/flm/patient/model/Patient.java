@@ -24,7 +24,7 @@ public class Patient {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int patientId ; 
+	private long patientId ; 
 	
 	private String name ;
 	
@@ -33,13 +33,13 @@ public class Patient {
 	@Column(unique = true, nullable = false)
 	private String email ;
 	
-	private long phnnum ; 
+	private long phoneNumber ; 
 	
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "patient_address_id")
 	private PatientAddress patientAddress;
 	
-	private LocalDate DOB;
+	private LocalDate dateOfBirth;
 
 	public Patient(String name, String gender, String email, long phnnum, PatientAddress patientAddress,
 			LocalDate dOB) {
