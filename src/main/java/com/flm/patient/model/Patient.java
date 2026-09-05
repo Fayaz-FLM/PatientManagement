@@ -49,7 +49,7 @@ public class Patient {
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.patientAddress = patientAddress;
-		this.dateOfBirth = this.dateOfBirth;
+		this.dateOfBirth = dateOfBirth;
 	}
 	
 	
