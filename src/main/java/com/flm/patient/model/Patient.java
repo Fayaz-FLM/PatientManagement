@@ -28,7 +28,7 @@ public class Patient {
 	
 	private String name ;
 	
-	private String gender ;
+	private Gender gender ;
 	
 	@Column(unique = true, nullable = false)
 	private String email ;
@@ -41,7 +41,7 @@ public class Patient {
 	
 	private LocalDate dateOfBirth;
 
-	public Patient(String name, String gender, String email, long phoneNumber, PatientAddress patientAddress,
+	public Patient(String name, Gender gender, String email, long phoneNumber, PatientAddress patientAddress,
 			LocalDate dateOfBirth) {
 		super();
 		this.name = name;

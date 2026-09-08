@@ -2,6 +2,8 @@ package com.flm.patient.dto;
 
 import java.time.LocalDate;
 
+import com.flm.patient.model.Gender;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,7 +17,7 @@ private String patientId;
 	
 	private String name;
 	
-	private String gender;
+	private Gender gender;
 	
 	private String email;
 	
