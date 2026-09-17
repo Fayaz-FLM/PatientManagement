@@ -2,7 +2,7 @@ package com.flm.patient.dto;
 
 import java.time.LocalDate;
 
-import com.flm.patient.model.Gender;
+import com.flm.patient.utils.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
