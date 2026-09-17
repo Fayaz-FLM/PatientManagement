@@ -1,6 +1,7 @@
 package com.flm.patient.model;
 
 import java.time.LocalDate;
+import com.flm.patient.enum.Gender;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
