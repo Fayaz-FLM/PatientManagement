@@ -20,6 +20,8 @@ public class PatientAddress {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long patientAddressId;
 	
+	private String doorNumber;
+	
 	private String landmark;
 	
 	private String city;
