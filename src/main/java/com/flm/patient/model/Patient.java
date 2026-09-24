@@ -13,6 +13,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -21,6 +22,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 public class Patient {
 	
 	@Id
@@ -34,7 +36,7 @@ public class Patient {
 	@Column(unique = true, nullable = false)
 	private String email ;
 	
-	private long phoneNumber ; 
+	private String phoneNumber ; 
 	
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "patient_address_id")
@@ -42,7 +44,7 @@ public class Patient {
 	
 	private LocalDate dateOfBirth;
 
-	public Patient(String name, Gender gender, String email, long phoneNumber, PatientAddress patientAddress,
+	public Patient(String name, Gender gender, String email, String phoneNumber, PatientAddress patientAddress,
 			LocalDate dateOfBirth) {
 		super();
 		this.name = name;
