@@ -14,7 +14,7 @@ public class PatientDTOBuilder {
 										.patientName(patient.getName())
 										.gender(patient.getGender())
 										.patientEmail(patient.getEmail())
-										.patientPhoneNumber(Long.toString(patient.getPhoneNumber()))
+										.patientPhoneNumber((patient.getPhoneNumber()))
 										.dateOfBirth(patient.getDateOfBirth())
 										.patientAddress(buildPatientAddressResponseDTO(patient.getPatientAddress()))
 										.build();
